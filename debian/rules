@@ -1,0 +1,35 @@
+#!/usr/bin/make -f
+include /usr/share/dpkg/default.mk
+
+export GOPATH = /usr/share/gocode
+
+SYSTYPE = Desktop
+ARCH = x86
+ifeq ($(DEB_BUILD_ARCH), amd64)
+	ARCH = x86
+endif
+ifeq ($(DEB_BUILD_ARCH), i386)
+	ARCH = x86
+endif
+
+ifeq ($(DEB_BUILD_ARCH), mipsel)
+	ARCH = mips
+endif
+ifeq ($(DEB_BUILD_ARCH), mips64el)
+	ARCH = mips
+endif
+ifeq ($(DEB_BUILD_ARCH), sw_64)
+	ARCH = sw
+endif
+ifeq ($(DEB_BUILD_ARCH), arm64)
+	ARCH = arm
+endif
+export ARCH
+
+%: 
+	dh $@
+
+override_dh_auto_build:
+	dh_auto_build -- ARCH=$(ARCH)
+override_dh_auto_install:
+	dh_auto_install -- ARCH=$(ARCH)

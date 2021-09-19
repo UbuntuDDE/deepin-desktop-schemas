@@ -1,0 +1,32 @@
+Source: deepin-desktop-schemas
+Section: misc
+Priority: optional
+Maintainer: Arun Kumar Pariyar <expertaruncorp@gmail.com>
+Build-depends:
+ debhelper-compat (=13),
+ deepin-desktop-base | deepin-desktop-server,
+ golang-dlib-dev,
+ golang-go,
+ libglib2.0-bin,
+Standards-Version: 4.5.0
+Homepage: http://www.deepin.org/
+
+Package: deepin-desktop-schemas
+Section: misc
+Architecture: any
+Depends:
+ deepin-desktop-base | deepin-desktop-server,
+ ${misc:Depends},
+ ${shlibs:Depends},
+Conflicts:
+ deepin-default-gsettings,
+Replaces:
+ deepin-default-gsettings,
+Breaks:
+ dde-daemon (<< 2.92.2),
+ deepin-default-gsettings,
+ deepin-wm (<< 0.2.1),
+ startdde (<< 2.91.0),
+Description: GSettings deepin desktop-wide schemas
+ deepin-desktop-schemas contains a collection of GSettings schemas for
+ settings shared by various components of a desktop.

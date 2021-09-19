@@ -1,0 +1,39 @@
+Description: <short summary of the patch>
+ TODO: Put a short summary on the line above and replace this paragraph
+ with a longer explanation of this change. Complete the meta-information
+ with other relevant fields (see below for details). To make it easier, the
+ information below has been extracted from the changelog. Adjust it or drop
+ it.
+ .
+ deepin-desktop-schemas (5.6.0.13-1) groovy; urgency=medium
+ .
+   * Rebuild UbuntuDDE Groovy.
+Author: Arun Kumar Pariyar <expertaruncorp@gmail.com>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: https://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: 2020-07-21
+
+--- deepin-desktop-schemas-5.6.0.13.orig/Makefile
++++ deepin-desktop-schemas-5.6.0.13/Makefile
+@@ -24,11 +24,6 @@ install:
+ 	mkdir -p $(DESTDIR)$(PREFIX)/share/deepin-desktop-schemas
+ 	cp -v result/*-override $(DESTDIR)$(PREFIX)/share/deepin-desktop-schemas
+ 
+-	mkdir -p $(DESTDIR)$(PREFIX)/share/deepin-appstore/
+-	cp deepin-appstore/$(ARCH)/settings.ini $(DESTDIR)$(PREFIX)/share/deepin-appstore/
+-
+-	mkdir -p $(DESTDIR)$(PREFIX)/share/deepin-app-store/
+-	cp deepin-app-store/$(ARCH)/*.ini $(DESTDIR)$(PREFIX)/share/deepin-app-store/
+ 
+ clean:
+ 	-rm -rf bin
