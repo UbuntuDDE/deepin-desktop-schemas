@@ -1,3 +1,0 @@
-[com.deepin.dde.touchpad]
-disable-while-typing-cmd='syndaemon -i 0.5 -d'
-

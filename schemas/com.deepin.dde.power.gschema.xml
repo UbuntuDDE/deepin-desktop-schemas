@@ -120,6 +120,12 @@
 			<summary/>
 			<description/>
 		</key>
+		<key type="i" name="low-power-notify-threshold">
+			<range min="0" max="100"/>
+			<default>20</default>
+			<summary/>
+			<description/>
+		</key>
 		<key type="i" name="percentage-low">
 			<range min="0" max="100"/>
 			<default>20</default>
@@ -203,6 +209,10 @@
 		<key type="s" name="save-brightness-while-psm">
 			<default>""</default>
 			<summary>brightness saved while power saving mode enabled</summary>
+		</key>
+		<key type="b" name="light-sensor-enabled">
+			<default>false</default>
+			<summary>light sensor enabled</summary>
 		</key>
 	</schema>
 </schemalist>
