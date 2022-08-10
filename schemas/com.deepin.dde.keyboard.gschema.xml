@@ -18,7 +18,7 @@
         	<value value="0" nick="enable"/>
 		<value value="1" nick="forbidden"/>
 		<value value="2" nick="hidden"/>
-    </enum>
+    	</enum>
 	<schema path="/com/deepin/dde/keyboard/" id="com.deepin.dde.keyboard">
 		<key type="as" name="user-layout-list">
 			<default>[]</default>
@@ -35,7 +35,7 @@
 			<summary>Keyboard Layout</summary>
 			<description/>
 		</key>
-
+        
 		<key name="layout-scope" enum="com.deepin.dde.keyboard.LayoutScope">
 			<default>'global'</default>
 			<summary>Keyboard Layout Scope</summary>
@@ -86,7 +86,7 @@
 		<key name="numlock-state" enum="com.deepin.dde.keyboard.NumLockState">
 			<default>'unknown'</default>
 		</key>
-		<key name="osd-adjust-volume-enabled" enum="com.deepin.dde.keyboard.OsdVolumeEnabled">
+        	<key name="osd-adjust-volume-enabled" enum="com.deepin.dde.keyboard.OsdVolumeEnabled">
 			<default>'enable'</default>
 			<summary>Control whether Volume shortcut works</summary>
 			<description>Control whether Volume shortcut works</description>

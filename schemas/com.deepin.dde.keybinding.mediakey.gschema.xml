@@ -178,7 +178,7 @@
         <!-- ignore XF86LaunchD-->
         <!-- ignore XF86LaunchE-->
         <!-- ignore XF86LaunchF-->
-        <key type="as" name="close">
+        <key type="as" name="media-close">
             <default>['XF86Close']</default>
             <summary>Close window</summary>
             <description/>
@@ -370,7 +370,7 @@
             <summary>Mute the Mic from the system</summary>
             <description/>
         </key>
-        <key type="as" name="ariplane-mode-toggle">
+        <key type="as" name="airplane-mode-toggle">
             <default>['XF86RFKill']</default>
             <summary/>
             <description/>

@@ -1,3 +1,9 @@
+deepin-desktop-schemas (5.9.19-1) jammy; urgency=medium
+
+  * Change import path in tools/override/main.go.
+
+ -- Arun Kumar Pariyar <openarungeek@gmail.com>  Tue, 12 Jul 2022 23:45:17 +0545
+
 deepin-desktop-schemas (5.9.18-1ubuntu1) impish; urgency=medium
 
   * Rebuild with emtpy service schema file removed.
