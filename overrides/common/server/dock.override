@@ -1,1 +1,2 @@
-../pro/dock.override
+[com.deepin.dde.dock]
+display-mode='efficient'
